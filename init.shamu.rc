@@ -250,6 +250,9 @@ on boot
     write /sys/class/leds/charging/trigger battery-charging
     write /sys/class/leds/charging/max_brightness 1
 
+    # Prevent permission denied error for telephony
+    chmod 0644 /proc/cmdline
+
 # subsystem ramdump collection
 on property:persist.sys.qc.sub.rdump.on=*
     write /sys/module/subsystem_restart/parameters/enable_ramdumps ${persist.sys.qc.sub.rdump.on}
