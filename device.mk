@@ -163,10 +163,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.audio.monitorRotation=true 
-
-# Missing Props
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.monitorRotation=true \
     fmas.spkr_6ch=35,20,110 \
     fmas.spkr_2ch=35,25 \
     fmas.spkr_angles=10 \
