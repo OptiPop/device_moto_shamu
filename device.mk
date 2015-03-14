@@ -240,8 +240,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LTE, CDMA, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \
-    telephony.lteOnCdmaDevice=1 \
-    ro.telephony.get_imsi_from_sim=true
+    telephony.lteOnCdmaDevice=1
 
 # SIM based FSG loading & MCFG activation
 PRODUCT_PROPERTY_OVERRIDES += \
