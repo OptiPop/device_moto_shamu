@@ -173,7 +173,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.dualmic.config=endfire \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=false 
+    persist.audio.fluence.speaker=false \
+    persist.radio.sib16_support=1 \
+    persist.data.qmi.adb_logmask=0
+    
 
 # Audio effects
 PRODUCT_PACKAGES += \
