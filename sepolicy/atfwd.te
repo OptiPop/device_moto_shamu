@@ -13,3 +13,6 @@ allow atfwd qmux:unix_stream_socket connectto;
 binder_use(atfwd);
 binder_call(atfwd, system_app);
 binder_call(atfwd, servicemanager);
+
+#missing permission for atfwd daemon
+allow atfwd property_socket:sock_file write;
