@@ -20,6 +20,9 @@
 # Get the long list of APNs
 #PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
+# F2FS 
+PRODUCT_COPY_FILES := device/moto/shamu/format-system.sh:system/bin/format-system.sh
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
