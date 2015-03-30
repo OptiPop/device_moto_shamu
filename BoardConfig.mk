@@ -19,9 +19,13 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-
+STRICT_ALIASING := true
 TARGET_NO_BOOTLOADER := true
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := despair_defconfig
+TARGET_KERNEL_SOURCE := kernel/moto/shamu
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
