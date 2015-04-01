@@ -244,11 +244,6 @@ on boot
     chown media media /sys/devices/c55_ctrl/gpio_core/value
     chown media media /sys/devices/c55_ctrl/gpio_reset/value
 
-	# LED permissions
-    chown system system /sys/class/leds/charging/brightness
-    chown system system /sys/class/leds/charging/max_brightness
-    write /sys/class/leds/charging/trigger battery-charging
-    write /sys/class/leds/charging/max_brightness 1
 
     # Prevent permission denied error for telephony
     chmod 0644 /proc/cmdline
