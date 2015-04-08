@@ -192,7 +192,10 @@ PRODUCT_PACKAGES += \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-    e2fsck
+	fsck.f2fs \
+	mkfs.f2fs \
+	e2fsck \
+	setup_fs
 
 # for off charging mode
 PRODUCT_PACKAGES += \
