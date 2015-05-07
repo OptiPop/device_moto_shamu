@@ -29,7 +29,7 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_GCC_VERSION_EXP := 5.1
-TARGET_GCC_VERSION_ARM := 4.9
+TARGET_GCC_VERSION_ARM := 6.0
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := despair_defconfig
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
