@@ -43,5 +43,4 @@ PRODUCT_PACKAGES += \
 
 # Extra products packages
 PRODUCT_PACKAGES += \
-	Viper4Android \
 	BetterBatteryStats
