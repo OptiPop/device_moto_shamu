@@ -137,6 +137,7 @@ BOARD_SEPOLICY_UNION += \
         bootanim.te \
         bridge.te \
         camera.te \
+        cnd.te \
         device.te \
         domain.te \
         file.te \
