@@ -227,7 +227,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
-    persist.radio.no_wait_for_card=1
+    persist.radio.no_wait_for_card=1 \
+    persist.radio.sib16_support=1
+
+# Include IMSEnabler
+PRODUCT_PACKAGES += \
+    IMSEnabler
+
+# Rich Communications Service is disabled in 5.1
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rcs.supported=0
 
 #Reduce IMS logging
 PRODUCT_PROPERTY_OVERRIDES += \
