@@ -137,6 +137,7 @@ BOARD_SEPOLICY_UNION += \
         bootanim.te \
         bridge.te \
         camera.te \
+        cnd.te \
         device.te \
         domain.te \
         file.te \
@@ -148,6 +149,7 @@ BOARD_SEPOLICY_UNION += \
         mpdecision.te \
         netd.te \
         netmgrd.te \
+        wpa.te \
         platform_app.te \
         property.te \
         property_contexts \
